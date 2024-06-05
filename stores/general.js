@@ -97,7 +97,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Kericho',
         year: '2023',
         imageUrl: '/images/about/coffee.jpg',
-        projectUrl: 'coffee-irrigation'
+        projectUrl: 'coffee-irrigation',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
         projectName: 'Agri Jobs for Youth',
@@ -107,7 +108,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Bungoma, Kakamega,Siaya,Kisumu',
         year: '2022',
         imageUrl: '/images/about/youth-jobs.jpg',
-        projectUrl: 'agri-jobs-for-youth'
+        projectUrl: 'agri-jobs-for-youth',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
         projectName: 'Mvua Pap!',
@@ -117,7 +119,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Nairobi',
         year: '2020',
         imageUrl: '/images/about/mvua-pap.jpg',
-        projectUrl: 'mvua-pap'
+        projectUrl: 'mvua-pap',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
         projectName: 'Run for Food',
@@ -127,7 +130,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Egeiyo Marakwet',
         year: '2018',
         imageUrl: '/images/about/running.jpg',
-        projectUrl: 'run-for-food'
+        projectUrl: 'run-for-food',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
         projectName: 'Future Coffee Farmers',
@@ -137,7 +141,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Kilimanjaro Region – Tanzania',
         year: '2018',
         imageUrl: '/images/about/future-farmers.jpg',
-        projectUrl: 'future-coffee-farmers'
+        projectUrl: 'future-coffee-farmers',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
         projectName: 'Kijana na Acre',
@@ -147,7 +152,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Uasin Gishu',
         year: '2014',
         imageUrl: '/images/about/land.jpg',
-        projectUrl: 'kijana-na-acre'
+        projectUrl: 'kijana-na-acre',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
         projectName: 'Mama na 1/8th',
@@ -157,7 +163,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Uasin Gishu',
         year: '2018',
         imageUrl: '/images/about/women.jpg',
-        projectUrl: 'mama-na-one-eighth'
+        projectUrl: 'mama-na-one-eighth',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
         projectName: 'Potato project',
@@ -167,7 +174,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Uasin Gishu',
         year: '2018',
         imageUrl: '/images/about/potatoes.jpg',
-        projectUrl: 'potato-project'
+        projectUrl: 'potato-project',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
         projectName: 'Occupational Safety for IPM',
@@ -177,7 +185,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Nakuru, Kajiado, Kiambu, Nakuru',
         year: '2016',
         imageUrl: '/images/about/safety.jpg',
-        projectUrl: 'occupational-safety-for-IPM'
+        projectUrl: 'occupational-safety-for-IPM',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
         projectName: 'Project Nurture ',
@@ -187,7 +196,8 @@ export const useGeneralStore = defineStore('general', {
         county: 'Uasin Gishu',
         year: '2015',
         imageUrl: '/images/about/passion-fruit.jpg',
-        projectUrl: 'project-nurture'
+        projectUrl: 'project-nurture',
+        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
     ],
   }),
