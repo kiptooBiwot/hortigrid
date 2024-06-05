@@ -1,30 +1,34 @@
 <script setup>
+import { useGeneralStore } from '@/stores/general.js'
+
+const generalStore = useGeneralStore()
+
 const socialIcons = reactive([
   { icon: 'bi:facebook', url: '#' },
   { icon: 'mdi:twitter', url: '#' },
   { icon: 'mdi:instagram', url: '#' },
 ])
 
-const menuItems = ref([
-  { title: 'Home', url: '/', type: 'link' },
-  { title: 'About Us', url: '/about-us', type: 'link' },
-  {
-    title: 'Services',
-    url: '/services',
-    type: 'dropdown',
-    isOpen: false,
-    children: [
-      { title: 'First', url: '/first' },
-      { title: 'Second', url: '/second' },
-      { title: 'Third', url: '/Third' },
-      { title: 'Fourth', url: '/Fourth' },
-      { title: 'Fifth', url: '/Fifth' },
-    ],
-  },
-  { title: 'Portfolio', url: '/portfolio', type: 'link' },
-  { title: 'News', url: '/news', type: 'link' },
-  { title: 'Contact', url: '/contacts', type: 'link' },
-])
+// const menuItems = ref([
+//   { title: 'Home', url: '/', type: 'link' },
+//   { title: 'About Us', url: '/about-us', type: 'link' },
+//   {
+//     title: 'Services',
+//     url: '/services',
+//     type: 'dropdown',
+//     isOpen: false,
+//     children: [
+//       { title: 'First', url: '/first' },
+//       { title: 'Second', url: '/second' },
+//       { title: 'Third', url: '/Third' },
+//       { title: 'Fourth', url: '/Fourth' },
+//       { title: 'Fifth', url: '/Fifth' },
+//     ],
+//   },
+//   { title: 'Portfolio', url: '/portfolio', type: 'link' },
+//   { title: 'News', url: '/news', type: 'link' },
+//   { title: 'Contact', url: '/contacts', type: 'link' },
+// ])
 
 const isSubMenuOpen = ref(false)
 const servicesDropdownOpen = ref(false)
@@ -59,7 +63,7 @@ const toggleServicesDropdown = () => {
       </div>
       <div class="hidden lg:block">
         <div class="flex gap-5 font-heading uppercase text-sm font-extrabold">
-          <template v-for="(menu, index) in menuItems">
+          <template v-for="(menu, index) in generalStore.menuItems">
             <template v-if="menu.type === 'link'">
               <NuxtLink
                 :to="menu.url"

@@ -4,7 +4,7 @@ export const useGeneralStore = defineStore('general', {
   state: () => ({
     menuItems: [
       { title: 'Home', url: '/', type: 'link' },
-      { title: 'About Us', url: '/', type: 'link' },
+      { title: 'About Us', url: '/about-us', type: 'link' },
       {
         title: 'Services',
         url: '/services',
@@ -18,9 +18,9 @@ export const useGeneralStore = defineStore('general', {
           { title: 'Fifth', url: '/Fifth' },
         ],
       },
-      { title: 'Portfolio', url: '/', type: 'link' },
-      { title: 'News', url: '/', type: 'link' },
-      { title: 'Contact', url: '/', type: 'link' },
+      { title: 'Portfolio', url: '/portfolio', type: 'link' },
+      // { title: 'News', url: '/', type: 'link' },
+      { title: 'Contact', url: '/contact-us', type: 'link' },
     ],
     projects: [
       {
@@ -31,17 +31,17 @@ export const useGeneralStore = defineStore('general', {
         county: 'Kericho',
         year: '2023',
         imageUrl: '/images/about/coffee.jpg',
-        projectUrl: ''
+        projectUrl: 'coffee-irrigation'
       },
       {
-        projectName: 'Agri Job for Youth',
+        projectName: 'Agri Jobs for Youth',
         client: 'GIZ',
         scopeOfWork:
           'Business Development Services, Training and Extension Service Provision in Passion Fruit Value Chain',
         county: 'Bungoma, Kakamega,Siaya,Kisumu',
         year: '2022',
         imageUrl: '/images/about/youth-jobs.jpg',
-        projectUrl: ''
+        projectUrl: 'agri-jobs-for-youth'
       },
       {
         projectName: 'Mvua Pap!',
@@ -51,7 +51,7 @@ export const useGeneralStore = defineStore('general', {
         county: 'Nairobi',
         year: '2020',
         imageUrl: '/images/about/mvua-pap.jpg',
-        projectUrl: ''
+        projectUrl: 'mvua-pap'
       },
       {
         projectName: 'Run for Food',
@@ -61,7 +61,7 @@ export const useGeneralStore = defineStore('general', {
         county: 'Egeiyo Marakwet',
         year: '2018',
         imageUrl: '/images/about/running.jpg',
-        projectUrl: ''
+        projectUrl: 'run-for-food'
       },
       {
         projectName: 'Future Coffee Farmers',
@@ -71,7 +71,7 @@ export const useGeneralStore = defineStore('general', {
         county: 'Kilimanjaro Region – Tanzania',
         year: '2018',
         imageUrl: '/images/about/future-farmers.jpg',
-        projectUrl: ''
+        projectUrl: 'future-coffee-farmers'
       },
       {
         projectName: 'Kijana na Acre',
@@ -81,7 +81,7 @@ export const useGeneralStore = defineStore('general', {
         county: 'Uasin Gishu',
         year: '2014',
         imageUrl: '/images/about/land.jpg',
-        projectUrl: ''
+        projectUrl: 'kijana-na-acre'
       },
       {
         projectName: 'Mama na 1/8th',
@@ -91,7 +91,7 @@ export const useGeneralStore = defineStore('general', {
         county: 'Uasin Gishu',
         year: '2018',
         imageUrl: '/images/about/women.jpg',
-        projectUrl: ''
+        projectUrl: 'mama-na-one-eighth'
       },
       {
         projectName: 'Potato project',
@@ -101,7 +101,7 @@ export const useGeneralStore = defineStore('general', {
         county: 'Uasin Gishu',
         year: '2018',
         imageUrl: '/images/about/potatoes.jpg',
-        projectUrl: ''
+        projectUrl: 'potato-project'
       },
       {
         projectName: 'Occupational Safety for IPM',
@@ -111,7 +111,7 @@ export const useGeneralStore = defineStore('general', {
         county: 'Nakuru, Kajiado, Kiambu, Nakuru',
         year: '2016',
         imageUrl: '/images/about/safety.jpg',
-        projectUrl: ''
+        projectUrl: 'occupational-safety-for-IPM'
       },
       {
         projectName: 'Project Nurture ',
@@ -121,7 +121,7 @@ export const useGeneralStore = defineStore('general', {
         county: 'Uasin Gishu',
         year: '2015',
         imageUrl: '/images/about/passion-fruit.jpg',
-        projectUrl: ''
+        projectUrl: 'project-nurture'
       },
     ],
   }),

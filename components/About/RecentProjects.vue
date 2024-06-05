@@ -69,7 +69,7 @@ const generalStore = useGeneralStore()
             </p>
             <div>
               <NuxtLink
-                :to="project.projectUrl"
+                :to="`/portfolio/${project.projectUrl}`"
                 class="px-4 py-1 bg-[#e6ae17] rounded-md text-white hover:bg-[#edda32] cursor-pointer"
               >
                 Read More
