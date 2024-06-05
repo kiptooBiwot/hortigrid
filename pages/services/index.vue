@@ -1,8 +1,20 @@
-<script setup></script>
+<script setup>
+const hero = {
+  image: '/images/services/farmer-extension.jpg',
+  title: 'Solutions We Offer',
+  description:
+    'We combine our extensive experience and new technologies designed by our team of Developers, Agriculture, and Agronomy experts to offer these services.',
+  showButton: false,
+  height: 'three-quarters',
+  toUrl: '/',
+}
+</script>
 
 <template>
   <div class="min-h-screen w-full">
-    <HomeHero />
-    <div class="max-w-6xl mx-5 lg:mx-auto"></div>
+    <HomeHero :hero-details="hero" />
+    <div class="max-w-6xl mx-5 lg:mx-auto">
+      <HomeSolutions />
+    </div>
   </div>
 </template>
