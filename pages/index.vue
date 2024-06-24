@@ -1,9 +1,11 @@
 <script setup>
 const hero = {
-  image: '/images/hero_img_1.jpg',
+  // image: '/images/hero_img_1.jpg',
+  image: '/images/hero_img.jpg',
   title: 'Horti Grid',
+  subHeading: 'Your Agribusiness Solutions Partner!',
   description:
-    "Our expert team delivers affordable consultation, extension, and agribusiness management packages, fostering growth for farmers and investors alike. Let's cultivate your success together!",
+    "Explore our crop production and consultancy services dedicated to niche horticultural value chains. We specialize in enterprise modeling, agronomic support, and capacity building, ensuring profitability for farmers and investors. Let's grow success together!",
   showButton: true,
   height: 'full',
 }

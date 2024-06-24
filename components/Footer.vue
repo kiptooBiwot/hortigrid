@@ -16,19 +16,28 @@ const generalStore = useGeneralStore()
             <HortiGridLogo />
           </div>
           <p class="text-xs w-[265px] leading-6">
-            As our world grapples with the idea of a better, new energy supply
-            strategy, the biofuel can be an awesome option to make everyone
-            happy.
+            Smart resource utilization is key to making horticultural value
+            chains work for smallholders. Horti Grid is there to help you make
+            this a reality.
           </p>
         </div>
-        <div class="flex-1 space-y-5">
+        <div class="flex-1 space-y-3">
           <h2 class="text-3xl text-gray-700 font-bold">Contact Us</h2>
+          <div class="flex items-center text-sm gap-3">
+            <Icon
+              name="heroicons:map-pin-16-solid"
+              class="w-6 h-6 text-horti-green-900"
+            />
+            <span
+              >Alpha Lane, Upper Elgon View Rd, Elgon View Estate Eldoret</span
+            >
+          </div>
           <div class="flex items-center text-sm gap-3">
             <Icon
               name="heroicons:envelope-solid"
               class="w-5 h-5 text-horti-green-900"
             />
-            <span>hortigrid@gmail.com</span>
+            <span>info@hortigrid.com</span>
           </div>
           <div class="flex items-center text-sm gap-3">
             <Icon

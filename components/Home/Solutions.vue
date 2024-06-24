@@ -21,7 +21,7 @@ const generalStore = useGeneralStore()
       <div class="w-full block lg:flex gap-10">
         <div class="flex w-1/2 mx-auto lg:w-3/12 items-center">
           <img
-            src="/images/home/solns_home.jpg"
+            src="/images/home/services_we_offer.jpeg"
             alt=""
             class="object-cover rounded-xl h-full"
           />

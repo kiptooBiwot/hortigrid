@@ -19,6 +19,7 @@ export const useGeneralStore = defineStore('general', {
         ],
       },
       { title: 'Portfolio', url: '/portfolio', type: 'link' },
+      { title: 'Products', url: '/products', type: 'link' },
       // { title: 'News', url: '/', type: 'link' },
       { title: 'Contact', url: '/contact-us', type: 'link' },
     ],
@@ -88,6 +89,40 @@ export const useGeneralStore = defineStore('general', {
         imageUrl: '/images/services/market-linkage.jpg'
       },
     ],
+    products: [
+      {
+        title: 'Lima Smart',
+        subtitle: 'Agribusiness Project Modelling & Guided Extension',
+        description:
+          '<p>Through this service, farmers are connected to vital information and providers throughout the value chain, covering everything from business planning to produce marketing. We assist not only with enterprise formulation but also provide guided extension and agro-care services to ensure successful production and market readiness.</p> <p>We are transitioning to virtual service provision using information technology. This move will decentralize our services, engage more agronomists among other service providers, and streamline crop management for future out-growers.</p>',
+        url: '/products/lima-smart',
+        imageUrl: '/images/products/enterprise-modelling.jpg'
+      },
+      {
+        title: 'Plateau Greens',
+        subtitle: 'Guided Extension, Agro-Care, Market Readiness, Market Linkage & Value Addition',
+        description:
+          '<p>This is the fresh produce division of Horti Grid, specializing in production and providing production management and market linkage for out-growers through a social enterprise model. Over the next three years, our primary focus will be on Passion fruit and herbs for export, alongside mushrooms for local markets. Furthermore, we are actively developing value-added products, such as passion fruit juice for local consumption.</p> <p>Our operations strictly adhere to global standards like KS1758, GlobalGAP (Global Good Agricultural Practices), and GRASP (GlobalGAP Risk Assessment on Social Practice). Ensuring compliance on the part of any outgrower agreements is integral to our engagement and market linkage processes.</p>',
+        url: '/products/plateau-greens',
+        imageUrl: '/images/products/enterprise-modelling.jpg'
+      },
+      {
+        title: 'Agritude Academy',
+        subtitle: 'Capacity building, Skills Development, Job Creation ',
+        description:
+          '<p>The Agritude 101 Academy is a vocational skills development and attitude change program whose goal is to build the capacities of young agribusiness professionals and enthusiasts, positioning them for employment and business development opportunities. </p> <p>Through this academy, we have designed an Agri-Enterprise Manager Training Course aimed at equipping participants with crucial industry knowledge and practical skills for sustainably setting up and running an enterprise in horticulture. This course effectively bridges the gap between classroom learning and real-world agribusiness enterprise management.</p>',
+        url: '/products/agritude-academy',
+        imageUrl: '/images/products/enterprise-modelling.jpg'
+      },
+      {
+        title: 'Production Support Services',
+        subtitle: 'Farm Infrastructure, Production Guides',
+        description:
+          '<ol class="list-decimal"><li class="font-bold py-5">Farm Infrastructure Customisation and Set Up</li><p>We help design and customize a repertoire of farm structures and systems including but not limited to drip Irrigation and fertigation systems, standard greenhouses and screen houses for nurseries and field production, post-harvest structures, and waste disposal units</p><li class="font-bold py-5">Crop Production Field Guides</li><p>Our comprehensive but easy-to-understand crop handbooks include industry information, simple budgets, best practices and management techniques, and other valuable insights to enhance crop productivity and profitability. These handbooks are designed to provide farmers with not only technical knowledge but also skills that will ensure sustainable farming practices.</p></ol>',
+        url: '/products/production-support-services',
+        imageUrl: '/images/products/enterprise-modelling.jpg'
+      },
+    ],
     projects: [
       {
         projectName: 'Coffee Irrigation ',
@@ -145,38 +180,49 @@ export const useGeneralStore = defineStore('general', {
         projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
       {
-        projectName: 'Kijana na Acre',
-        client: 'Uasin Gishu County',
+        projectName: 'Horti Grid Demonstration Center',
+        client: 'Horti Grid',
         scopeOfWork:
-          'Construction of post-harvest units for horticultural produce',
+          'Our production and capacity-building center for showcasing sustainable horticulture ',
         county: 'Uasin Gishu',
-        year: '2014',
+        year: '2023',
         imageUrl: '/images/about/land.jpg',
-        projectUrl: 'kijana-na-acre',
+        projectUrl: 'horti-grid-demo-center',
         projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
       },
-      {
-        projectName: 'Mama na 1/8th',
-        client: 'Work Her Dream Organisation',
-        scopeOfWork:
-          'Training and extension service provision for Indigenous vegetable farmers for a contracted market',
-        county: 'Uasin Gishu',
-        year: '2018',
-        imageUrl: '/images/about/women.jpg',
-        projectUrl: 'mama-na-one-eighth',
-        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
-      },
-      {
-        projectName: 'Potato project',
-        client: 'Kapsengwet Farm ',
-        scopeOfWork:
-          'Production planning, irrigation systems setup, crop establishment, and management for a large-scale potato farm',
-        county: 'Uasin Gishu',
-        year: '2018',
-        imageUrl: '/images/about/potatoes.jpg',
-        projectUrl: 'potato-project',
-        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
-      },
+      // {
+      //   projectName: 'Kijana na Acre',
+      //   client: 'Uasin Gishu County',
+      //   scopeOfWork:
+      //     'Construction of post-harvest units for horticultural produce',
+      //   county: 'Uasin Gishu',
+      //   year: '2014',
+      //   imageUrl: '/images/about/land.jpg',
+      //   projectUrl: 'kijana-na-acre',
+      //   projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
+      // },
+      // {
+      //   projectName: 'Mama na 1/8th',
+      //   client: 'Work Her Dream Organisation',
+      //   scopeOfWork:
+      //     'Training and extension service provision for Indigenous vegetable farmers for a contracted market',
+      //   county: 'Uasin Gishu',
+      //   year: '2018',
+      //   imageUrl: '/images/about/women.jpg',
+      //   projectUrl: 'mama-na-one-eighth',
+      //   projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
+      // },
+      // {
+      //   projectName: 'Potato project',
+      //   client: 'Kapsengwet Farm ',
+      //   scopeOfWork:
+      //     'Production planning, irrigation systems setup, crop establishment, and management for a large-scale potato farm',
+      //   county: 'Uasin Gishu',
+      //   year: '2018',
+      //   imageUrl: '/images/about/potatoes.jpg',
+      //   projectUrl: 'potato-project',
+      //   projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
+      // },
       {
         projectName: 'Occupational Safety for IPM',
         client: 'Kailey’s Consortium',

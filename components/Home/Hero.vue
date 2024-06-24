@@ -13,16 +13,21 @@ const props = defineProps(['heroDetails'])
       :class="[heroDetails.height === 'full' ? 'h-screen' : 'h-[500px]']"
     ></div>
     <div class="text-center text-white max-w-3xl mx-5 lg:mx-auto space-y-5 z-0">
-      <h1 class="text-5xl md:text-8xl text-white font-normal mb-4">
-        {{ heroDetails.title }}
-      </h1>
+      <div class="mb-4">
+        <h1 class="text-5xl md:text-8xl text-white font-normal mb-1">
+          {{ heroDetails.title }}
+        </h1>
+        <p v-if="heroDetails.subHeading" class="text-base font-heading italic">
+          {{ heroDetails.subHeading }}
+        </p>
+      </div>
       <p class="text-lg md:text-2xl font-body leading-relaxed">
         {{ heroDetails.description }}
       </p>
 
       <div class="py-5" :class="[heroDetails.showButton ? 'block' : 'hidden']">
         <NuxtLink
-          to="/services"
+          :to="heroDetails.toUrl"
           class="py-3 px-9 bg-horti-green-900 text-white rounded-md shadow-sm uppercase hover:shadow-lg hover:bg-horti-green-800 font-bold"
         >
           Learn More

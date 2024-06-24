@@ -1,19 +1,29 @@
 <script setup>
 const hero = {
   image: '/images/about/about-us-hero.jpg',
-  title: 'Agri-Enterprise Planning',
-  description:
-    'We offer tailored services to optimize productivity, profitability, and sustainability',
-  showButton: false,
+  title: 'Lima Smart',
+  description: 'Agribusiness Project Modelling & Guided Extension',
+  showButton: true,
   height: 'three-quarters',
-  toUrl: '/',
+  toUrl: '/products',
 }
 
 const counter = ref([
-  { title: 'Products', count: 8 },
+  { title: 'Products', count: 5 },
   { title: 'Projects', count: 96 },
   { title: 'Farmers Served', count: '2,987' },
   { title: 'TeamMembers', count: 9 },
+])
+
+const team = reactive([
+  { name: 'Patricia Lagat', role: 'Operations', image: '' },
+  { name: 'Prof. Job K. Lagat', role: 'Agribusiness Development', image: '' },
+  { name: 'Dr. Elly Kibet ', role: 'Strategy', image: '' },
+  { name: 'Emmanuel Lagat', role: 'Consulting Agronomist', image: '' },
+  { name: 'David Omeno', role: 'Farm Manager', image: '' },
+  { name: 'Shadrach Yator', role: 'Water and Irrigation', image: '' },
+  { name: 'Kiptoo Biwot', role: 'ICT Consultant', image: '' },
+  { name: 'Annaline Korir', role: 'Communication', image: '' },
 ])
 </script>
 
@@ -43,46 +53,81 @@ const counter = ref([
         </div>
         <div class="w-full md:w-1/2 space-y-5 mt-10 md:mt-0">
           <p class="">
-            We are a leading horticultural consultancy and extension service
-            company, dedicated to building the capacities of horticultural
-            producers and promoting sustainable agriculture practices. Located
-            at our demo farm in Elgon View, Eldoret, we offer comprehensive
-            consultancy services and extension programs tailored to the needs of
-            farmers.
+            Horti Grid, founded in 2012 and situated in Eldoret, Kenya, is a
+            consultancy firm specializing in horticultural production,
+            capacity-building, and agribusiness development. Our primary focus
+            is on agrienterprise development, where we strive to enlighten
+            farmers and investors with industry insights, technical knowledge,
+            and essential skills.
           </p>
-          <!-- <p>
-            Our strength lies in harnessing the expertise of our team, composed
-            of agribusiness specialists, agronomists, and technical service
-            personnel. Together, we design effective systems and processes to
-            drive success in agribusiness ventures.
-          </p> -->
+          <p>
+            Moreover, we concentrate on incorporating smallholder farmers into
+            agricultural value chains through production management and
+            off-taker contracts. Our key asset is our team's expertise,
+            consisting of agribusiness specialists, agronomists, and technical
+            service staff.
+          </p>
 
           <h3 class="font-heading text-gray-800 font-bold text-2xl">Mission</h3>
           <p>
-            Our mission is to revolutionize the horticultural industry by
-            providing expert guidance, innovative solutions, and accessible
-            resources to farmers, ultimately fostering agricultural prosperity
-            and environmental sustainability.
+            To deliver on products and solutions that will surpass client
+            expectations.
           </p>
-          <!-- <ul class="list-disc ml-10 space-y-5">
-            <li>
-              <span class="font-bold font-heading">Excellence:</span> We are
-              committed to delivering high-quality services and solutions that
-              exceed our clients' expectations.
-            </li>
-            <li>
-              <span class="font-bold font-heading">Innovation:</span> We embrace
-              innovation and continuously explore new technologies and
-              techniques to enhance agricultural productivity and
-              sustainability.
-            </li>
-            <li>
-              <span class="font-bold font-heading">Collaboration:</span> We
-              believe in the power of collaboration and work closely with
-              farmers, stakeholders, and partners to achieve common goals.
-            </li>
-          </ul> -->
+
+          <h3 class="font-heading text-gray-800 font-bold text-2xl">Vision</h3>
+          <p>
+            To be an industry leader in wealth creation through agribusiness.
+          </p>
         </div>
+      </div>
+      <div class="py-10 max-w-2xl mx-auto space-y-5">
+        <h3 class="font-heading text-horti-green-800 font-bold text-3xl">
+          Core Values
+        </h3>
+        <div>
+          <h4 class="font-heading text-gray-800 font-bold text-lg">
+            Excellence
+          </h4>
+          <p>
+            We are committed to delivering high-quality products, services and
+            solutions that exceed our clients' expectations.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-heading text-gray-800 font-bold text-lg">
+            Innovation
+          </h4>
+          <p>
+            We embrace innovation and continuously explore new technologies and
+            techniques to enhance agricultural productivity and sustainability
+          </p>
+        </div>
+        <div>
+          <h4 class="font-heading text-gray-800 font-bold text-lg">
+            Collaboration
+          </h4>
+          <p>
+            We believe in the power of collaboration and work closely with
+            farmers, stakeholders, and partners to achieve common goals
+          </p>
+        </div>
+
+        <!-- What WE Do! -->
+        <h3 class="font-heading text-horti-green-800 font-bold text-3xl">
+          What we do
+        </h3>
+
+        <ul>
+          <li>
+            A comprehensive agribusiness development and agronomic support
+            service for horticulture, dubbed LIMA SMART
+          </li>
+          <li>
+            Out grower farmer engagement for local and export market linkages
+          </li>
+          <li>Farm enterprise management training.</li>
+          <li>Infrastructural Customization and Installation.</li>
+        </ul>
       </div>
     </div>
 
@@ -102,6 +147,27 @@ const counter = ref([
             <p class="text-2xl font-bold">{{ stats.title }}</p>
           </div>
         </template>
+      </div>
+    </div>
+
+    <div class="w-full py-10 bg-horti-green-100">
+      <div class="max-w-6xl mx-5 lg:mx-auto">
+        <div class="flex items-center gap-5 mb-10">
+          <div class="hidden md:flex items-center">
+            <Icon name="wpf:record" class="w-5 h-5 text-gray-500 mr-3" />
+            <Icon name="wpf:record" class="w-10 h-10 text-gray-800" />
+          </div>
+          <h1
+            class="text-[35px] mx-auto md:mx-0 md:text-6xl lg:text-7xl font-normal text-horti-green-900"
+          >
+            Meet the Team
+          </h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div v-for="(persons, index) in team" :key="index">
+            <AboutMeetTheTeam :team="persons" />
+          </div>
+        </div>
       </div>
     </div>
 
