@@ -8,7 +8,7 @@ export const useGeneralStore = defineStore('general', {
       {
         title: 'Services',
         url: '/services',
-        type: 'dropdown',
+        type: 'link',
         isOpen: false,
         children: [
           { title: 'First', url: '/first' },
@@ -18,11 +18,79 @@ export const useGeneralStore = defineStore('general', {
           { title: 'Fifth', url: '/Fifth' },
         ],
       },
+      {
+        title: 'Products',
+        url: '/products',
+        isOpen: false,
+        type: 'dropdown',
+        children: [
+          { title: 'Lima Smart', url: '/products/lima-smart' },
+          { title: 'Plateau Greens', url: '/products/plateau-greens' },
+          { title: 'Agritude Academy', url: '/products/agritude-academy' },
+          { title: 'Production Support Services', url: '/products/production-support-services' },
+        ]
+      },
       { title: 'Portfolio', url: '/portfolio', type: 'link' },
-      { title: 'Products', url: '/products', type: 'link' },
       // { title: 'News', url: '/', type: 'link' },
       { title: 'Contact', url: '/contact-us', type: 'link' },
     ],
+    heroItems: [
+      {
+        // image: '/images/hero_img_1.jpg',
+        image: '/images/hero_img.jpg',
+        title: 'Horti Grid',
+        // subHeading: 'Your Agribusiness Solutions Partner!',
+        description:
+          "Explore our crop production, consultancy and market linkage services for niche horticultural value chains. Let’s grow success together!",
+        showButton: true,
+        height: 'three-quarters',
+        toUrl: "/products"
+      },
+      {
+        image: '/images/hero/lima-smart.jpg',
+        title: 'Lima Smart',
+        description: 'Agribusiness Project Modelling & Guided Extension',
+        showButton: true,
+        height: 'three-quarters',
+        toUrl: '/products/lima-smart',
+      },
+      {
+        image: '/images/hero/irrigation.jpg',
+        title: 'Solutions We Offer',
+        description:
+          'We combine our extensive experience and new technologies designed by our team of Developers, Agriculture, and Agronomy experts to offer these services.',
+        showButton: false,
+        height: 'three-quarters',
+        toUrl: '/',
+      },
+      {
+        image: '/images/portfolio/planting.jpg',
+        title: 'Planting Material',
+        description:
+          '',
+        showButton: false,
+        height: 'three-quarters',
+        toUrl: '/',
+      },
+      {
+        image: '/images/hero/farm.jpg',
+        title: 'Agri-Enterprise Planning',
+        description:
+          'We offer tailored services to optimize productivity, profitability, and sustainability',
+        showButton: false,
+        height: 'three-quarters',
+        toUrl: '/',
+      },
+      {
+        image: '/images/contact/contact-horti.jpg',
+        title: 'Reach Out to Us',
+        description: "Let's have a chat about your project.",
+        showButton: false,
+        height: 'three-quarters',
+        toUrl: '/',
+      },
+    ],
+
     services: [
       {
         title: 'Enterprise Modelling',
@@ -32,14 +100,14 @@ export const useGeneralStore = defineStore('general', {
         url: '/services/enterprise-modelling',
         imageUrl: '/images/services/enterprise-modelling.jpg'
       },
-      {
-        title: 'Planting material',
-        icon: 'icon-park-outline:hold-seeds',
-        description:
-          'With our expertise in both production and sourcing, we provide reliable planting material, specializing in fruit seedlings such as passion fruit, pomegranates, tamarillo, citrus, and apples. ',
-        url: '/services/planting-material',
-        imageUrl: '/images/services/planting-materials.jpg'
-      },
+      // {
+      //   title: 'Planting material',
+      //   icon: 'icon-park-outline:hold-seeds',
+      //   description:
+      //     'With our expertise in both production and sourcing, we provide reliable planting material, specializing in fruit seedlings such as passion fruit, pomegranates, tamarillo, citrus, and apples. ',
+      //   url: '/services/planting-material',
+      //   imageUrl: '/images/services/planting-materials.jpg'
+      // },
       {
         title: 'Production Management',
         icon: 'streamline:money-graph-bar-increase-up-product-performance-increase-arrow-graph-business-chart',
@@ -96,7 +164,7 @@ export const useGeneralStore = defineStore('general', {
         description:
           '<p>Through this service, farmers are connected to vital information and providers throughout the value chain, covering everything from business planning to produce marketing. We assist not only with enterprise formulation but also provide guided extension and agro-care services to ensure successful production and market readiness.</p> <p>We are transitioning to virtual service provision using information technology. This move will decentralize our services, engage more agronomists among other service providers, and streamline crop management for future out-growers.</p>',
         url: '/products/lima-smart',
-        imageUrl: '/images/products/enterprise-modelling.jpg'
+        imageUrl: '/images/lima-smart/lima-smart (4).jpg'
       },
       {
         title: 'Plateau Greens',
@@ -104,7 +172,7 @@ export const useGeneralStore = defineStore('general', {
         description:
           '<p>This is the fresh produce division of Horti Grid, specializing in production and providing production management and market linkage for out-growers through a social enterprise model. Over the next three years, our primary focus will be on Passion fruit and herbs for export, alongside mushrooms for local markets. Furthermore, we are actively developing value-added products, such as passion fruit juice for local consumption.</p> <p>Our operations strictly adhere to global standards like KS1758, GlobalGAP (Global Good Agricultural Practices), and GRASP (GlobalGAP Risk Assessment on Social Practice). Ensuring compliance on the part of any outgrower agreements is integral to our engagement and market linkage processes.</p>',
         url: '/products/plateau-greens',
-        imageUrl: '/images/products/enterprise-modelling.jpg'
+        imageUrl: '/images/plateau-greens/plateau-greens (3).jpg'
       },
       {
         title: 'Agritude Academy',
@@ -112,7 +180,7 @@ export const useGeneralStore = defineStore('general', {
         description:
           '<p>The Agritude 101 Academy is a vocational skills development and attitude change program whose goal is to build the capacities of young agribusiness professionals and enthusiasts, positioning them for employment and business development opportunities. </p> <p>Through this academy, we have designed an Agri-Enterprise Manager Training Course aimed at equipping participants with crucial industry knowledge and practical skills for sustainably setting up and running an enterprise in horticulture. This course effectively bridges the gap between classroom learning and real-world agribusiness enterprise management.</p>',
         url: '/products/agritude-academy',
-        imageUrl: '/images/products/enterprise-modelling.jpg'
+        imageUrl: '/images/agritude/agritude (2).jpg'
       },
       {
         title: 'Production Support Services',
@@ -120,20 +188,20 @@ export const useGeneralStore = defineStore('general', {
         description:
           '<ol class="list-decimal"><li class="font-bold py-5">Farm Infrastructure Customisation and Set Up</li><p>We help design and customize a repertoire of farm structures and systems including but not limited to drip Irrigation and fertigation systems, standard greenhouses and screen houses for nurseries and field production, post-harvest structures, and waste disposal units</p><li class="font-bold py-5">Crop Production Field Guides</li><p>Our comprehensive but easy-to-understand crop handbooks include industry information, simple budgets, best practices and management techniques, and other valuable insights to enhance crop productivity and profitability. These handbooks are designed to provide farmers with not only technical knowledge but also skills that will ensure sustainable farming practices.</p></ol>',
         url: '/products/production-support-services',
-        imageUrl: '/images/products/enterprise-modelling.jpg'
+        imageUrl: '/images/farm-infrastructure/farm-infrastructure1 (5).jpg'
       },
     ],
     projects: [
       {
         projectName: 'Coffee Irrigation ',
-        client: 'Chebitrir Farms, Jacks Farm,Philip’s Farm',
+        client: 'Chebirir Farms, Jacks Farm,Philip’s Farm',
         scopeOfWork:
           'Installation and maintenance of irrigation systems on Coffee plantation ',
         county: 'Kericho',
         year: '2023',
-        imageUrl: '/images/about/coffee.jpg',
+        imageUrl: '/images/chebirir-farm/chebirir-farm1.jpg',
         projectUrl: 'coffee-irrigation',
-        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
+        projectImages: ['/images/chebirir-farm/chebirir-farm.jpg', '/images/chebirir-farm/chebirir-farm1.jpg', '/images/chebirir-farm/chebirir-farm-2.jpg',]
       },
       {
         projectName: 'Agri Jobs for Youth',
@@ -175,9 +243,9 @@ export const useGeneralStore = defineStore('general', {
           'Development of coffee production curricula for young coffee farmers ',
         county: 'Kilimanjaro Region – Tanzania',
         year: '2018',
-        imageUrl: '/images/about/future-farmers.jpg',
+        imageUrl: '/images/future-coffee/future-coffee4.jpg',
         projectUrl: 'future-coffee-farmers',
-        projectImages: ['/images/services/extension.jpg', '/images/services/farm-infrastructure.jpg', '/images/services/agronomic-support.jpg', '/images/services/farmer-extension.jpg', '/images/services/market-linkage.jpg']
+        projectImages: ['/images/future-coffee/future-coffee.jpg', '/images/future-coffee/future-coffee1.jpg', '/images/future-coffee/future-coffee2.jpg', '/images/future-coffee/future-coffee3.jpg', '/images/future-coffee/future-coffee4.jpg', '/images/future-coffee/future-coffee5.jpg']
       },
       {
         projectName: 'Horti Grid Demonstration Center',

@@ -12,9 +12,10 @@ const hero = {
 
 <template>
   <div class="min-h-screen w-full">
-    <HomeHero :hero-details="hero" />
+    <!-- <HomeHero :hero-details="hero" /> -->
+    <SwiperSlider :hero-details="hero" />
     <div class="max-w-6xl mx-5 lg:mx-auto">
-      <HomeSolutions />
+      <Solutions />
     </div>
   </div>
 </template>

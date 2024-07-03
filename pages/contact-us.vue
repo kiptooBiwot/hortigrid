@@ -2,7 +2,7 @@
 const hero = {
   image: '/images/contact/contact-horti.jpg',
   title: 'Reach Out to Us',
-  description: "Let's have a chat about your project.",
+  description: 'How can we be of help?',
   showButton: false,
   height: 'three-quarters',
   toUrl: '/',

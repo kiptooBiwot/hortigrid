@@ -13,20 +13,55 @@ const generalStore = useGeneralStore()
           <Icon name="wpf:record" class="w-10 h-10 text-gray-800" />
         </div>
         <h1
-          class="text-[35px] mx-auto md:mx-0 md:text-6xl lg:text-7xl font-normal text-horti-green-900"
+          class="text-[45px] mx-auto md:mx-0 md:text-6xl lg:text-7xl font-normal text-horti-green-900"
         >
           Solutions We Offer
         </h1>
       </div>
-      <div class="w-full block lg:flex gap-10">
+
+      <div class="max-w-5xl mx-0 md:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <!-- <div class=""> -->
+          <div
+            v-for="(service, index) in generalStore.services"
+            :key="index"
+            class="items-start w-full rounded-lg gap-5 md:gap-10 px-0 py-4 md:px-10 md:py-7"
+          >
+            <div>
+              <Icon
+                :name="service.icon"
+                class="text-horti-green-900 w-12 h-12 md:w-16 md:h-16"
+              />
+            </div>
+            <div class="block space-y-2">
+              <NuxtLink
+                :to="service.url"
+                class="font-bold text-[#333333] text-[20px] md:text-[30px] font-heading hover:text-horti-green-900 transition duration-300 ease-in-out"
+              >
+                {{ service.title }}
+              </NuxtLink>
+              <p class="text-sm overflow-ellipsis leading-7 text-[#888888]">
+                <!-- {{ service.description }} -->
+                <!-- {{
+                    service.description.length > 50
+                      ? service.description.substring(0, 120) + '...'
+                      : service.description
+                  }} -->
+              </p>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="">
         <div class="flex w-1/2 mx-auto lg:w-3/12 items-center">
-          <img
+          <!-- <img
             src="/images/home/services_we_offer.jpeg"
             alt=""
             class="object-cover rounded-xl h-full"
-          />
+          /> -->
         </div>
-        <div class="block md:flex md:flex-wrap flex-1">
+        <!-- <div class="block md:flex md:flex-wrap flex-1">
           <template
             v-for="(service, index) in generalStore.services"
             :key="index"
@@ -46,16 +81,17 @@ const generalStore = useGeneralStore()
                   {{ service.title }}
                 </NuxtLink>
                 <p class="text-sm overflow-ellipsis text-[#888888]">
-                  {{
+                  {{ service.description }}-->
+        <!-- {{
                     service.description.length > 50
                       ? service.description.substring(0, 120) + '...'
                       : service.description
-                  }}
-                </p>
+                  }} -->
+        <!--</p>
               </div>
             </div>
           </template>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

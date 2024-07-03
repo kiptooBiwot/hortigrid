@@ -34,11 +34,11 @@ const isSubMenuOpen = ref(false)
 const servicesDropdownOpen = ref(false)
 
 const toggleDropdown = (index) => {
-  menuItems.value[index].isOpen = !menuItems.value[index].isOpen
+  generalStore.menuItems[index].isOpen = !generalStore.menuItems[index].isOpen
 }
 
 const closeDropdown = (index) => {
-  menuItems.value[index].isOpen = false
+  generalStore.menuItems[index].isOpen = false
 }
 
 const isMobileMenuOpen = ref(false)
@@ -58,9 +58,9 @@ const toggleServicesDropdown = () => {
 <template>
   <div class="">
     <div class="max-w-6xl mx-auto px-5 flex justify-between items-center py-8">
-      <div>
+      <NuxtLink to="/" class="cursor-pointer">
         <HortiGridLogo />
-      </div>
+      </NuxtLink>
       <div class="hidden lg:block">
         <div class="flex gap-5 font-heading uppercase text-sm font-extrabold">
           <template v-for="(menu, index) in generalStore.menuItems">
@@ -157,7 +157,10 @@ const toggleServicesDropdown = () => {
           />
         </div>
         <div class="relative mt-20">
-          <template v-for="(item, index) in menuItems" :key="index">
+          <template
+            v-for="(item, index) in generalStore.menuItems"
+            :key="index"
+          >
             <NuxtLink
               @click="toggleMobileMenu"
               :to="item.url"

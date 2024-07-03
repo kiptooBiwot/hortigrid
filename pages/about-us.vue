@@ -19,17 +19,21 @@ const team = reactive([
   { name: 'Patricia Lagat', role: 'Operations', image: '' },
   { name: 'Prof. Job K. Lagat', role: 'Agribusiness Development', image: '' },
   { name: 'Dr. Elly Kibet ', role: 'Strategy', image: '' },
-  { name: 'Emmanuel Lagat', role: 'Consulting Agronomist', image: '' },
+  { name: 'Jeff', role: 'Consulting Agronomist', image: '' },
   { name: 'David Omeno', role: 'Farm Manager', image: '' },
   { name: 'Shadrach Yator', role: 'Water and Irrigation', image: '' },
-  { name: 'Kiptoo Biwot', role: 'ICT Consultant', image: '' },
+  {
+    name: 'Kiptoo Biwot',
+    role: 'ICT Consultant',
+    image: '/images/team/passport_photo.jpg',
+  },
   { name: 'Annaline Korir', role: 'Communication', image: '' },
 ])
 </script>
 
 <template>
   <div class="w-full">
-    <HomeHero :hero-details="hero" />
+    <SwiperSlider :hero-details="hero" />
 
     <div class="max-w-6xl mx-5 lg:mx-auto py-10 md:py-20 space-y-5 leading-7">
       <div class="flex items-center gap-5">
@@ -46,7 +50,7 @@ const team = reactive([
       <div class="block md:flex gap-10 py-10">
         <div class="w-full md:w-1/2 mx-auto lg:mx-0 flex items-center">
           <img
-            src="/images/about/about-image.jpg"
+            src="/images/team-about.jpg"
             alt=""
             class="object-cover rounded-md shadow-md w-full h-[250px] md:h-[400px]"
           />
@@ -117,7 +121,7 @@ const team = reactive([
           What we do
         </h3>
 
-        <ul>
+        <ul class="list-decimal ml-5 lg:ml-10 space-y-5">
           <li>
             A comprehensive agribusiness development and agronomic support
             service for horticulture, dubbed LIMA SMART
@@ -172,7 +176,9 @@ const team = reactive([
     </div>
 
     <section>
-      <AboutRecentProjects />
+      <div class="max-w-4xl mx-5 lg:mx-auto">
+        <AboutRecentProjects />
+      </div>
     </section>
   </div>
 </template>
